@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,13 @@
     <title>login</title>
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
         font-family: Arial, Helvetica, sans-serif;
     }
-    body{
+
+    body {
         height: 100vh;
         width: 100%;
         position: relative;
@@ -21,7 +23,8 @@
         justify-content: center;
         background: #25242e;
     }
-    .container{
+
+    .container {
         position: relative;
         /* top: 50%; */
         width: 350px;
@@ -36,27 +39,32 @@
         inset: 0;
         box-shadow: -4px -4px 5px #733d6f, 5px 5px 5px #471548a8;
     }
-    .container::after{
+
+    .container::after {
         content: '';
-        position:absolute;
+        position: absolute;
         width: 160%;
         height: 50%;
-        background: linear-gradient(transparent ,#ac0cac,transparent );
+        background: linear-gradient(transparent, #ac0cac, transparent);
     }
-    .container:hover::after{
+
+    .container:hover::after {
         animation: vaibhav 4s linear infinite;
-        
+
     }
+
     @keyframes vaibhav {
-        100%{
+        100% {
             transform: rotate(360deg);
         }
     }
-    .box h1{
+
+    .box h1 {
         color: #ac0cac;
         margin-bottom: 20px;
     }
-    .box{
+
+    .box {
         position: absolute;
         width: 345px;
         height: 370px;
@@ -64,55 +72,60 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background:#25242e;
+        background: #25242e;
         border-radius: 3px;
         z-index: 2;
     }
-    .user{
+
+    .user {
         position: relative;
         margin: 16px 20px;
         background: #25242e;
-        box-shadow: -2px -2px 2px #484755d6,4px 4px 16px black,-2px 2px 1px #474753d6;
-border-radius: 22px;
-width: 284px;
-height: 39px;
+        box-shadow: -2px -2px 2px #484755d6, 4px 4px 16px black, -2px 2px 1px #474753d6;
+        border-radius: 22px;
+        width: 284px;
+        height: 39px;
 
     }
-    .user img{
+
+    .user img {
         position: relative;
         top: -27px;
-width: 16px;
-right: -12px;
-z-index:9999;
+        width: 16px;
+        right: -12px;
+        z-index: 9999;
 
     }
-    .user input{
+
+    .user input {
         width: 253px;
-height: 39px;
-background: transparent;
-border: 0;
-outline: 0;
-position: relative;
-left: -1px;
-top: -1px;
-border-radius: 22px;
-padding-left: 32px;
-color: white;
+        height: 39px;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        position: relative;
+        left: -1px;
+        top: -1px;
+        border-radius: 22px;
+        padding-left: 32px;
+        color: white;
     }
-    .user i{
+
+    .user i {
         position: absolute;
         left: 35px;
         top: 12px;
         font-weight: 100;
-font-size: 13px;
-font-style: normal;
-pointer-events: none;
-transition: 0.5s;
-color: gray;
-z-index: 99;
+        font-size: 13px;
+        font-style: normal;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #bfb6b6;
+        z-index: 99;
     }
-    .user input:focus ~ i,
-    .user input:valid ~ i{
+
+    .user input:focus~i,
+    .user input:valid~i {
         transform: translateY(-20px) translateX(-7px);
         font-size: 0.7em;
         border: 1px solid #ac0cac;
@@ -122,78 +135,89 @@ z-index: 99;
         z-index: 99000999898989;
         background: #25242e;
     }
-    .user input:focus ,
-    .user input:valid{
+
+    .user input:focus,
+    .user input:valid {
         border: 1px solid #ac0cac;
         /* z-index: 0; */
     }
+
     /* .user input:checked{
         border: 1px solid #ac0cac;
     } */
-    .button input{
-        box-shadow: -2px -3px 2px #c15fb6d6,0px 0px 24px black,-2px 0px 2px #c15fb6d6;
-border-radius: 22px;
-width: 284px;
-height: 39px;
-background: #ac0cac;
-border: 0;
-outline: 0;
-margin-top: 17px;
+    .button input {
+        box-shadow: -2px -3px 2px #c15fb6d6, 0px 0px 24px black, -2px 0px 2px #c15fb6d6;
+        border-radius: 22px;
+        width: 284px;
+        height: 39px;
+        background: #ac0cac;
+        border: 0;
+        outline: 0;
+        margin-top: 17px;
     }
-    .form{
+
+    .form {
         margin-top: 20px;
         position: relative;
         display: flex;
         justify-content: space-around;
         width: 100%;
     }
-    .form b{
+
+    .form b {
         font-size: 13px;
         font-weight: 100;
         color: gray;
     }
-    .form a{
+
+    .form a {
         color: white;
         font-size: 12px;
         font-weight: 700;
     }
 
-    @media only screen and (max-width:500px){
-        .container{
+    @media only screen and (max-width:500px) {
+        .container {
             width: 320px;
         }
-        .box{
+
+        .box {
             width: 316px;
         }
-        .user{
+
+        .user {
             width: 250px;
         }
-        .button input{
+
+        .button input {
             width: 250px;
         }
-        .container::after{
+
+        .container::after {
             width: 200%;
         }
-        .user input{
+
+        .user input {
             width: 217px;
         }
 
     }
 </style>
+
 <body>
     <div class="container">
         <div class="box">
             <h1>Log In</h1>
             <div class="user">
-                
+
                 <input type="text" id="text" required>
-                <img src="./user.png" >
+                <img src="./user.png">
                 <i>Username Or Email Address</i>
             </div>
             <div class="user">
-                
+
                 <input type="password" id="password2" required>
-                <img src="./password2.png" >
+                <img src="./password2.png">
                 <i>Your Password</i>
             </div>
             <div class="button">
@@ -206,4 +230,5 @@ margin-top: 17px;
         </div>
     </div>
 </body>
+
 </html>
